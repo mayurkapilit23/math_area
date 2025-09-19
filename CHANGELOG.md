@@ -1,2 +1,4 @@
-## 0.0.1
-- Initial release of the area package.
+## 0.0.2
+- Initial release of the math_area package.
+- Added Example.dart
+- Update Readme.md
