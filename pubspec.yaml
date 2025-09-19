@@ -1,6 +1,6 @@
 name: math_area
 description: "A simple Flutter package to calculate the area of common shapes like square, rectangle, circle, and triangle."
-version: 0.0.3
+version: 0.0.4
 homepage: https://github.com/mayurkapilit23/math_area.git
 
 environment:

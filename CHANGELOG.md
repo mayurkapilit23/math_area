@@ -5,3 +5,6 @@
 
 ## 0.0.3
 - fix the project structure
+
+## 0.0.4
+- changes in example.dart
