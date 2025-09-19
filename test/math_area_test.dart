@@ -7,6 +7,8 @@ void main() {
     final mathArea = MathArea();
     expect(mathArea.calculateAreaRect(2,3), '6');
     expect(mathArea.calculateAreaTri(2,3), '3');
+    expect(mathArea.calculateAreaSqu(4), '16');
+    expect(mathArea.calculateAreaCir(2), '12.56');
 
   });
 }
