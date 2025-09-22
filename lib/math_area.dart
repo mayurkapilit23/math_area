@@ -1,3 +1,3 @@
-library math_area;
+library;
 
 export 'src/math_area_utils.dart';

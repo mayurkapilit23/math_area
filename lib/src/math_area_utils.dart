@@ -1,28 +1,47 @@
+import 'dart:math';
+
 import 'package:intl/intl.dart';
 
 class MathArea {
-  String calculateAreaRect(double width, double height) {
-    double result = width * height;
-    final formatter = NumberFormat('#.####');
-    return formatter.format(result);
+  static final _formatter = NumberFormat('#.####');
+
+  //Rectangle: double type output
+  static double areaRectangleValue(double width, double height) {
+    return width * height;
   }
 
-  String calculateAreaTri(double width, double height) {
-    double result = 1 / 2 * width * height;
-    final formatter = NumberFormat('#.####');
-    return formatter.format(result);
+  //Rectangle: string formate output
+  static String areaRectangle(double width, double height) {
+    return _formatter.format(areaRectangleValue(width, height));
   }
 
-  String calculateAreaSqu(double length) {
-    double result = length * length;
-    final formatter = NumberFormat('#.####');
-    return formatter.format(result);
+  //Triangle: double type output
+  static double areaTriangleValue(double width, double height) {
+    return 1 / 2 * width * height;
   }
 
-  String calculateAreaCir(double radius) {
-    const pi = 3.14;
-    double result = pi * (radius * radius);
-    final formatter = NumberFormat('#.####');
-    return formatter.format(result);
+  //Triangle: string formate output
+  static String areaTriangle(double width, double height) {
+    return _formatter.format(areaTriangleValue(width, height));
+  }
+
+  //Square: double type output
+  static double areaSquareValue(double length) {
+    return length * length;
+  }
+
+  //Square: string formate output
+  static String areaSquare(double length) {
+    return _formatter.format(areaSquareValue(length));
+  }
+
+  //Circle: double type output
+  static double areaCircleValue(double radius) {
+    return pi * (radius * radius);
+  }
+
+  //Circle: string formate output
+  static String areaCircle(double radius) {
+    return _formatter.format(areaCircleValue(radius));
   }
 }

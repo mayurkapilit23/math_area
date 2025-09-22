@@ -32,9 +32,6 @@ class _HomeScreenState extends State<HomeScreen> {
   final TextEditingController txtWidth = TextEditingController();
   String result = '';
 
-  //Instance of MathArea()
-  final mathArea = MathArea();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,8 +46,11 @@ class _HomeScreenState extends State<HomeScreen> {
             onPressed: () {
               double? width = double.tryParse(txtWidth.text);
               double? height = double.tryParse(txtHeight.text);
+
+              // You don’t really need to instantiate MathArea, you can use directly as show below:
               //For Area of Rectangle
-              String res = mathArea.calculateAreaRect(width!, height!);
+
+              String res = MathArea.areaRectangle(width!, height!);
               setState(() {
                 result = res;
               });
